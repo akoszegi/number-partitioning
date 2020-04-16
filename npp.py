@@ -28,7 +28,7 @@ def get_qubo(S):
     c = sum(S)
 
     # Add QUBO construction here
-    for i in range(len(S) - 1):
+    for i in range(len(S)):
 
         # Add the linear terms
         Q[i, i] = -4*c*S[i] + 4*S[i]**2
@@ -53,7 +53,7 @@ def run_on_qpu(Q, sampler):
     numruns = 1000 # update
 
     sample_set = sampler.sample_qubo(Q, chain_strength=chainstrength, num_reads=numruns)
-    inspector.show(sample_set)
+    # inspector.show(sample_set)
 
     return sample_set
 
