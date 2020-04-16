@@ -35,7 +35,7 @@ def get_qubo(S):
 
         # Add the quadratic terms
         for j in range(i+1, len(S)):
-            Q[i, j] = 8*S[i]*S[i+1]
+            Q[i, j] = 8*S[i]*S[j]
         
         
     return Q
