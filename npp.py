@@ -70,3 +70,5 @@ if __name__ == "__main__":
         S1 = [S[i] for i in sample if sample[i] == 1]
         S0 = [S[i] for i in sample if sample[i] == 0]
         print("S0 Sum: ", sum(S0), "\tS1 Sum: ", sum(S1), "\t", S0)
+
+        # change something! 
